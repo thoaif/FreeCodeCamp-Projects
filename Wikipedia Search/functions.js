@@ -61,7 +61,7 @@ function remCl(){
 // create 10 divs for results
 function populate(){
   for (var i = 0; i < 10; i++){ 
-      var classes = "row result well hidden del" + i;
+      var classes = "result well hidden del" + i;
       var id = "div" + i;
       $("<div>", {
           'class': classes,

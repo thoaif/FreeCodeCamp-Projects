@@ -1,216 +1,232 @@
-body{
-    background: white;
-  }
+  body{
+      background: white;
+    }
+      
+    .title{
+        margin-top: 5%;
+        margin-right:5px;
+        margin-left:5px;
+    }
     
-  .title{
-      margin-top: 5%;
-      margin-right:5px;
-      margin-left:5px;
-  }
   
- 
-  .center{
-    text-align: center;
-  }
+    .center{
+      text-align: center;
+    }
 
-  .cont{
-    position:relative;
-    display: inline-block;
-  }
-  
-  .cont input#search, .nice-button{
-    width: 46px;
-    height: 50px;
-    background: #2b303b;
-    border: none; /*remove border */
-    font-size: 10pt;
-    color: #4f5b66 !important;
-    /* padding-left: 45px; leave some space to keep the icon */
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+    #box{
+      margin-top:10%; 
+      margin-bottom:10%;
+    }
+
+    .cont{
+      position:relative;
+      display: inline-block;
+      margin-left: -36px;
+    }
     
-    -webkit-transition: all 2s ease-out;  
-    -moz-transition: all 2s ease-out;  
-    -o-transition: all 2s ease-out;  
-    -ms-transition: all 2s ease-out;  
-    transition: all 2s ease-out;
-  }
-  
-  .nice-button {
-    padding: 5px 5px 5px 5px;
-    font-size: 15pt;
-    width: 100px;
-    color: #4f5b66;
-    display: inline-block;
-  }
-  
-  
-  
-  .cont input#search::-webkit-input-placeholder {
-     color: #65737e;
-  }
-   
-  .cont input#search:-moz-placeholder { /* Firefox 18- */
-     color: #65737e;  
-  }
-   
-  .cont input#search::-moz-placeholder {  /* Firefox 19+ */
-     color: #65737e;  
-  }
-   
-  .cont input#search:-ms-input-placeholder {  
-     color: #65737e;  
-  }
-  
+    .cont input#search, .nice-button{
+      width: 46px;
+      height: 50px;
+      background: #2b303b;
+      border: none; /*remove border */
+      font-size: 10pt;
+      color: #4f5b66 !important;
+      padding-left: 45px; /*leave some space to keep the icon */
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      
+      -webkit-transition: all 2s ease-out;  
+      -moz-transition: all 2s ease-out;  
+      -o-transition: all 2s ease-out;  
+      -ms-transition: all 2s ease-out;  
+      transition: all 2s ease-out;
+    }
+    
+    .nice-button {
+      padding: 5px 5px 5px 5px;
+      font-size: 15pt;
+      width: 100px;
+      color: #4f5b66;
+      display: inline-block;
+    }
+    
+    
+    
+    .cont input#search::-webkit-input-placeholder {
+      color: #65737e;
+    }
+    
+    .cont input#search:-moz-placeholder { /* Firefox 18- */
+      color: #65737e;  
+    }
+    
+    .cont input#search::-moz-placeholder {  /* Firefox 19+ */
+      color: #65737e;  
+    }
+    
+    .cont input#search:-ms-input-placeholder {  
+      color: #65737e;  
+    }
+    
 
-  
-  .icon{
-    display: inline-block;
-    color: #4f5b66;
-    position:absolute;
-    z-index: 1;
-  }
-  
-  #search{
-    color: #4f5b66;
-    position:absolute;
-  }
-  
-  .result{
-    background:grey; 
-    padding-top:10px;
-    border-radius:5px;
-    margin-left:10%;
-    margin-right:10%;
-    opacity: 0;
-  }
-  
-  .result:hover{
-     background:teal; 
-     padding-top:10px;
-    cursor:pointer;
-  }
-  
-  .hidden{
-    visibility: hidden;
-    display: none;
-  }
-  
-  .animate-icon{
-    animation-name: iconmove;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes iconmove {
-    10% { transform: rotate(-70deg); }
-    20% { transform: rotate(-140deg); }
-    30% { transform: rotate(0deg); }
-    40% { transform: rotate(-70deg);  }
-    50% { transform: rotate(-140deg); }
-    60% { transform: rotate(0deg); }
-    70% { transform: rotate(-70deg); }
-    80% { transform: rotate(-140deg); }
-    90% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg);}
-  }
-  
-  .animate-search{
-    animation-name: expandsearch;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes expandsearch {
-    10% { width: 46px; }
-    20% { width: 46px; }
-    30% { width: 140px; }
-    40% { width: 140px; }
-    50% { width: 140px; }
-    60% { width: 240px; }
-    70% { width: 240px; }
-    80% { width: 240px; }
-    90% { width: 340px; }
-    100% { width: 340px; }
-  }
-  
-  .animate-search2{
-    animation-name: decreasesearch;
-    animation-duration: 1s; 
-    animation-fill-mode: forwards;
-  }
-  @keyframes decreasesearch{
-    0% { width: 340px;}
-    100% { width: 40px;}
-  }
-  
-  .animate-itemscomein{
-    opacity: 0;
-    animation-name: itemscomein;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes itemscomein{
-    0% { transform: translate(-150%); }
-    100% { transform: translate(0%); opacity: 1; }
-  }
-  
-  .animate-itemsgoout{
-    opacity:1;
-    animation-name: itemsgoout;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes itemsgoout{
-    0% {}
-    100%  { margin-left: 90%; opacity: 0; } 
-  }
-  
-  .animate-move-search-up{
-    animation-name: move-search-up;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes move-search-up{
-    0% {}
-    100% { margin-top:0%; margin-bottom:0%; }
-  }
-  
-  .animate-move-cont{
-    animation-name: move-cont;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes move-cont {
-    10% {}
-    20% { transform: translate(0px);}
-    30% { transform: translate(-47px);}
-    40% {}
-    50% { transform: translate(-47px); }
-    60% { transform: translate(-97px);}
-    70% {}
-    80% { transform: translate(-97px); }
-    90% { transform: translate(-147px); }
-    100% { transform: translate(-147px); }
-  }
-  
-  .animate-move-cont-back{
-    animation-name: move-cont-back;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes move-cont-back{
-    0% { transform: translate(-147px);}
-    100% { transform: translate(0px);}
-  }
-  
-  .del0 { animation-delay: 0ms; }
-  .del1 { animation-delay: 50ms; }
-  .del2 { animation-delay: 100ms; }
-  .del3 { animation-delay: 150ms; }
-  .del4 { animation-delay: 200ms; }
-  .del5 { animation-delay: 250ms; }
-  .del6 { animation-delay: 300ms; }
-  .del7 { animation-delay: 350ms; }
-  .del8 { animation-delay: 400ms; }
-  .del9 { animation-delay: 450ms; }
+    
+    .icon{
+      display: inline-block;
+      color: #4f5b66;
+      position:absolute;
+      z-index: 1;
+      margin-top: 14px;
+      margin-left: 16px;
+      cursor: pointer;
+    }
+    
+    #search{
+      color: #4f5b66;
+      position:absolute;
+    }
+
+    .results{
+      margin-left:10%;
+      margin-right:10%;
+      margin-top: 30px;
+    }
+    
+    .result{
+      background:grey; 
+      padding: 10px 10px 10px 5px;
+      margin-top:  10px;
+      margin-bottom: 10px;
+      border-radius:5px;
+      /* display: inline-block; */
+      opacity: 0;
+    }
+    
+    .result:hover{
+      background:teal; 
+      padding-top:10px;
+      cursor:pointer;
+    }
+    
+    .hidden{
+      visibility: hidden;
+      display: none;
+    }
+    
+    .animate-icon{
+      animation-name: iconmove;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes iconmove {
+      10% { transform: rotate(-70deg); }
+      20% { transform: rotate(-140deg); }
+      30% { transform: rotate(0deg); }
+      40% { transform: rotate(-70deg);  }
+      50% { transform: rotate(-140deg); }
+      60% { transform: rotate(0deg); }
+      70% { transform: rotate(-70deg); }
+      80% { transform: rotate(-140deg); }
+      90% { transform: rotate(0deg); }
+      100% { transform: rotate(0deg);}
+    }
+    
+    .animate-search{
+      animation-name: expandsearch;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes expandsearch {
+      10% { width: 46px; }
+      20% { width: 46px; }
+      30% { width: 140px; }
+      40% { width: 140px; }
+      50% { width: 140px; }
+      60% { width: 240px; }
+      70% { width: 240px; }
+      80% { width: 240px; }
+      90% { width: 340px; }
+      100% { width: 340px; }
+    }
+    
+    .animate-search2{
+      animation-name: decreasesearch;
+      animation-duration: 1s; 
+      animation-fill-mode: forwards;
+    }
+    @keyframes decreasesearch{
+      0% { width: 340px;}
+      100% { width: 46px;}
+    }
+    
+    .animate-itemscomein{
+      opacity: 0;
+      animation-name: itemscomein;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes itemscomein{
+      0% { transform: translate(-150%); }
+      100% { transform: translate(0%); opacity: 1; }
+    }
+    
+    .animate-itemsgoout{
+      opacity:1;
+      animation-name: itemsgoout;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes itemsgoout{
+      0% {}
+      100%  { margin-left: 90%; opacity: 0; } 
+    }
+    
+    .animate-move-search-up{
+      animation-name: move-search-up;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes move-search-up{
+      0% {}
+      100% { margin-top:0%; margin-bottom:0%; }
+    }
+    
+    .animate-move-cont{
+      animation-name: move-cont;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes move-cont {
+      10% {}
+      20% { transform: translate(0px);}
+      30% { transform: translate(-47px);}
+      40% {}
+      50% { transform: translate(-47px); }
+      60% { transform: translate(-97px);}
+      70% {}
+      80% { transform: translate(-97px); }
+      90% { transform: translate(-147px); }
+      100% { transform: translate(-147px); }
+    }
+    
+    .animate-move-cont-back{
+      animation-name: move-cont-back;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes move-cont-back{
+      0% { transform: translate(-147px);}
+      100% { transform: translate(0px);}
+    }
+    
+    .del0 { animation-delay: 0ms; }
+    .del1 { animation-delay: 50ms; }
+    .del2 { animation-delay: 100ms; }
+    .del3 { animation-delay: 150ms; }
+    .del4 { animation-delay: 200ms; }
+    .del5 { animation-delay: 250ms; }
+    .del6 { animation-delay: 300ms; }
+    .del7 { animation-delay: 350ms; }
+    .del8 { animation-delay: 400ms; }
+    .del9 { animation-delay: 450ms; }
