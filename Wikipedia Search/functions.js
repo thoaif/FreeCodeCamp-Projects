@@ -6,42 +6,42 @@ $( document ).ready(function() {
 });
 
 $(function() {
-$("#cont").click(function() {
-  $('#search').removeClass('animate-search2');
-  $('#icon').removeClass('animate-icon2');
-  $('#icon').addClass('animate-icon');
-  $('#search').addClass('animate-search');
-  $('#cont').removeClass('animate-move-cont-back');
-  $('#cont').addClass('animate-move-cont');
-});
+  $("#cont").click(function() {
+    $('#search').removeClass('animate-search2');
+    $('#icon').removeClass('animate-icon2');
+    $('#icon').addClass('animate-icon');
+    $('#search').addClass('animate-search');
+    $('#cont').removeClass('animate-move-cont-back');
+    $('#cont').addClass('animate-move-cont');
+  });
 
-$("#cont").focusout(function(){
-        $('#icon').removeClass('animate-icon');
-        $('#search').removeClass('animate-search');
-        $('#search').addClass('animate-search2');
-        $('#cont').removeClass('animate-move-cont');
-        $('#cont').addClass('animate-move-cont-back');
- });
+  $("#cont").focusout(function(){
+    $('#icon').removeClass('animate-icon');
+    $('#search').removeClass('animate-search');
+    $('#search').addClass('animate-search2');
+    $('#cont').removeClass('animate-move-cont');
+    $('#cont').addClass('animate-move-cont-back');
+  });
 
-$(".results").on("click", "div", function() {
+  $(".results").on("click", "div", function() {
     var ind = $(this).index();
     window.location.href = urlArray[ind];
-});
+  });
 
-$(".nice-button").click(function() {
+  $(".nice-button").click(function() {
     window.location.href = "https://en.wikipedia.org/wiki/Special:Random";
-});
+  });
 
 
-$('#search').on('keyup', function(event) {    
-    var value = $('#search').val();  
-    if (event.keyCode == 13 && value.length !== 0) { 
-        $("#box").addClass('animate-move-search-up');
-        remCl();
-        setTimeout(function(){
-          searchWikipedia(value);  
-        }, 50+50*entries);
-}});
+  $('#search').on('keyup', function(event) {    
+      var value = $('#search').val();  
+      if (event.keyCode == 13 && value.length !== 0) { 
+          $("#box").addClass('animate-move-search-up');
+          remCl();
+          setTimeout(function(){
+            searchWikipedia(value);  
+          }, 50+50*entries);
+  }});
 
 
 });
