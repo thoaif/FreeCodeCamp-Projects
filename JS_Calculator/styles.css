@@ -1,0 +1,87 @@
+body{
+	background: #7d7d7d;
+}
+
+.me{
+	text-align:center;
+	margin-top: 4%;
+}
+
+.center{
+
+	text-align: center;
+}
+
+
+button {
+	font-size: 160%;
+	width: 50px;
+	height: 48px;
+	border-radius: 10%;
+	background: #424242;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-color: black;
+	border-bottom-width: thick;
+	color: #e8e9f7;
+	text-align: center;
+}
+
+.clearbtn{
+	font-size: 125%;
+	background:#F57F17;
+	border-right-color: #F57F17;
+}
+
+input {
+font-size: 14px;
+width: 260px;
+text-align: right;
+background:#699b78;
+	border-color:#699b78;
+	border: none;
+}
+
+#display1{
+	margin-bottom:0;
+	height: 50px;
+	font-size: 1.35em;
+	color: #616161;
+}
+#display2{
+	margin-top:0;
+	height: 30px;
+	color: #616161;
+}
+
+#displays{
+	border-spacing:0px;
+	background: #699b78;
+	margin: 10px 20px 10px 20px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+P{
+	padding-top:5px;
+	color: #616161;
+}
+
+.container{
+	background-image: #b0bec4;
+	background-image: linear-gradient(to top left, #b0bec4, #eaf6fb);
+	display: inline-block;
+	border-radius: 8px;
+	box-shadow: 4px 4px 10px 10px #404040;
+	margin-top: 8%;
+}
+
+table{
+	
+	padding: 10px 5px 10px 5px;
+	 border-spacing: 10px;
+	
+}
+
+
