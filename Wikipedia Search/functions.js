@@ -5,6 +5,7 @@ $( document ).ready(function() {
     populate(); 
 });
 
+$(function() {
 $("#cont").click(function() {
   $('#search').removeClass('animate-search2');
   $('#icon').removeClass('animate-icon2');
@@ -41,6 +42,14 @@ $('#search').on('keyup', function(event) {
           searchWikipedia(value);  
         }, 50+50*entries);
 }});
+
+
+});
+
+
+
+
+
 
 function remCl(){
   $('.result').addClass('animate-itemsgoout');
