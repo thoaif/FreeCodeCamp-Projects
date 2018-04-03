@@ -1,0 +1,44 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="functions.js"></script>
+    <LINK href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>  
+    <div class="center-text">
+      <div id="heading">Pomodoro Clock</div>
+      <div id="addtitles"> 
+        <span id="tbreak"> Break </span>
+        <span id="tsession"> Session</span> 
+      </div>
+      <span id="sub-break" class="adjust">&minus;</span>
+      <input type="text" pattern="[0-9.]+" id="text-break" value="5">
+      <span id="add-break" class="adjust">&plus;</span>
+      <span id="sub-session" class="adjust">&minus;</span>
+      <input type="text"  pattern="[0-9.]+" id="text-session" value="25">
+      <span id="add-session" class="adjust">&plus;</span>
+      <div class="outer">
+        <div class="middle">
+          <div class="center inner">
+            <div class="row">
+              <div class="buttons" id="btn1">work </div>
+              <div class="buttons" id="btn2">start </div>
+            </div>
+            <div id="watchbox">
+              <div id="circle">
+                <div id="display" class="center">
+                  <p id="text"> 00:00:00</p>
+                </div>
+              </div>
+            </div>   
+          </div>
+          <br>
+          <br>
+          <div class="buttons" id="stop">Reset</div><div class="buttons" id="vibrate">Vibrate</div>
+          <p>created and designed by 
+            <a href="https://codepen.io/Thoaif/">Thoaif</a>
+          </p>
+        </div>  
+      </div>
+    </div>
+  </body>  
