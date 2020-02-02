@@ -1,10 +1,9 @@
 # FreeCodeCamp.org Projects
 This is place where I keep some of the projects I do for FreeCodeCamp.org
 
-Other projects I made FreeCodeCamp can be found at
+Other projects I made FreeCodeCamp can be found at [codepen](https://codepen.io/Thoaif). Note that some of the pens with React does not work anymore.
 
-[codepen](https://codepen.io/Thoaif).
-Note that some of the pens with React does not work anymore.
+You can also view my [FreeCodeCamp Portfoli](https://www.freecodecamp.org/thoaif).
 
 
 ## JS Calculator
